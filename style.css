@@ -94,7 +94,7 @@
 .mainWrapper{
     background-color:hsl(217, 54%, 11%) ;
     width: 375px;
-    min-height: 700px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,6 +107,52 @@
     font-size: 14px; 
 }
 
+.name:hover{
+    color: hsl(178, 100%, 50%);
+    
+}
+
+.overlay{
+    background-color:hsla(178, 100%, 50%);
+    opacity: 0;
+    width: 275px;
+    height: 275px;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay:hover{
+    display: inline;
+    background-color:hsla(178, 100%, 50%);
+    opacity: 0.5;
+    width: 275px;
+    height: 275px;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlayView{
+    display: none;
+}
+
+.overlay:hover .overlayView{
+    display: inline;
+    opacity: 1;
+}
+
+
 .time{
     font-weight: 300;
     display: flex;
@@ -117,4 +163,180 @@
 
 .timeText{
     margin-left: 10px;
+}
+
+@media only screen and (min-width:500px) {
+    .avatar{
+        width: 30px;
+        border: solid 2px white;
+        border-radius: 50%;
+        margin-left: 25px;
+    }
+    
+    .avatarWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .creation{
+        font-weight: 300;
+        color: hsl(0, 0%, 50%) ;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    
+    .cardWrapper{
+        background-color: hsl(216, 50%, 16%);
+        box-shadow: 0px 5px 20px 20px hsl(217, 54%, 11%);
+        width: 325px;
+        height: 550px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Outfit', sans-serif;        
+    }
+    
+    .description{
+        font-weight: 400;
+        color: hsl(0, 0%, 50%) ;
+        font-size: 16px; 
+        margin-left: 25px;
+        margin-top: 25px;
+        margin-right: 25px;
+    }
+    
+    .equilibriumImg{
+        width: 275px;
+        border-radius: 20px;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    
+    }
+    
+    .equilibriumTitle{
+        font-weight: 600;
+        color: white ;
+        font-size: 20px; 
+        margin-left: 25px;
+        margin-top: 25px;
+        margin-right: 25px;
+    }
+    
+    .equilibriumTitle:hover{
+        color: hsl(178, 100%, 50%);
+    }
+    
+    .ethereum{
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        color:hsl(178, 100%, 50%);
+    }
+    
+    .ethText{
+        margin-left: 10px;
+    }
+    
+    .ethTimeWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 25px;
+    }
+    
+    .line{
+        border-top: solid 1px hsl(0, 0%, 50%);
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .mainWrapper{
+        background-color:hsl(217, 54%, 11%) ;
+        width: 100%;
+        min-height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .name{
+        font-weight: 300;
+        color: white ;
+        margin-left: 5px;
+        font-size: 14px; 
+    }
+    
+    .name:hover{
+        color: hsl(178, 100%, 50%);
+    }
+    
+    .overlay{
+        background-color:hsla(178, 100%, 50%);
+        opacity: 0;
+        width: 275px;
+        height: 275px;
+        border-radius: 20px;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .overlay:hover{
+        display: inline;
+        background-color:hsla(178, 100%, 50%);
+        opacity: 0.5;
+        width: 275px;
+        height: 275px;
+        border-radius: 20px;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+    }
+    
+    .overlayView{
+        display: none;
+    }
+    
+    .overlay:hover .overlayView{
+        display: inline;
+        opacity: 1;
+        z-index: 10;
+    }
+    
+    
+    .time{
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: hsl(0, 0%, 50%);
+    }
+    
+    .timeText{
+        margin-left: 10px;
+    } 
+
+    .shadowWrapper{
+        box-shadow: 0px 5px 20px 20px hsl(216, 50%, 12%);
+        width: 325px;
+        height: 550px;
+        border-radius: 20px;
+    }
 }
